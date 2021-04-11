@@ -1,8 +1,8 @@
 # Project Overview
 
-**PROJECT NAME:** dfadfadfsdfadf
+**PROJECT NAME:** Portfolio
 
-**PROJECT AUTHOR:** lkjlkjljlkadfsd
+**PROJECT AUTHOR:** Chun Hin D. Tang
 
 ## Project Schedule
 
@@ -22,11 +22,11 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+This project is to use everything I've learned so far to build my own portfolio.  This portfolio will contain cards that introduce and link to the projects/hw that I have completed for class.
 
 ## Google Sheet
 
-Include link to your google sheet here.  Here is the sample [Joe had used in class](https://docs.google.com/spreadsheets/d/15PmioBi2dQEkewpqI7MDkDpvcVF0Trw8vmarAQbwoHk/edit#gid=0) 
+[Chun Hin's google sheets](https://docs.google.com/spreadsheets/d/1gG9ADNvPO4dN1fL4r-pTxV-QYtfJ_8SZyhzLTCyNzq8/edit#gid=0)
 
 ## Portfolio I want to Emulate
 
@@ -34,18 +34,18 @@ Search and compare at least 3 profile web sites.  Record your findings in the ta
 
 Link To Site  | One Thing I'd Like To Incorporate | 
 | ------------- | ------------- |
-| [denisechandler.com](http://www.denisechandler.com/)| landing page animation
-|[jkeohan.com](http://jkeohan.com/) | mouseover on a project triggers animations |
-| [mattfarley.ca](http://mattfarley.ca/) |  layout of the projects
-
+| [dcfonts.com](https://www.dcfonts.com/)| the simplistic yet beautiful color styling
+|[lianapenn.com](https://www.lianapenn.com/) | the image in the cards enlarge with mouse over |
+| [arlynicholson.github](https://carlynicholson.github.io/portfolio/) |  the project cards design
 ---
 
 ## Wireframes
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
 
-- [Mobile](https://i.imgur.com/P3iBEZf.jpg)
-- [Desktop](https://i.imgur.com/xpOWo0E.jpg)
+- [Mobile](https://photos.app.goo.gl/qfJtrECupTCufYvbA)
+- [Tablet](https://photos.app.goo.gl/pps3SFvhqTjvRVGz8)
+- [Desktop](https://photos.app.goo.gl/QovRKePY5RiygNuHA)
 
 Wireframing Resources:
 
@@ -55,30 +55,36 @@ Wireframing Resources:
 
 ## Time/Priority Matrix 
 
-[Link](https://res.cloudinary.com/jkeohan/image/upload/a_270/v1591621734/project1_matrix_ocy5gc_h1kg0m.jpg)
+[Time and Priority Matrix](https://www.figma.com/proto/sFzFUC7FSsw6pgywgKfN8P/Time-Priority-Matrix?node-id=3%3A2&scaling=min-zoom&page-id=0%3A1)
 
-Include a full list of features that have been prioritized based on the `Time and Priority` Matix.  This involves drawing a a square.  In the middle of the square, on the x axis draw a line.  The most left part of the line should start with 0hrs and the end of the line should include 2hrs.  This line will be used to estimate how much time any one feature will take to complete. 
+<!-- Include a full list of features that have been prioritized based on the `Time and Priority` Matix.  This involves drawing a square.  In the middle of the square, on the x axis draw a line.  The most left part of the line should start with 0hrs and the end of the line should include 3hrs.  This line will be used to estimate how much time any one feature will take to complete.  -->
 
-Now draw a vertical line on the y axis.  The top of this line should have `High` and the bottom `Low`.  This line will be used to assign a priority to to each feature you wish to include in the project.  
+<!-- Now draw a vertical line on the y axis.  The top of this line should have `High` and the bottom `Low`.  This line will be used to assign a priority to to each feature you wish to include in the project.   -->
 
-Now create a separate list starting with A and assign it one of the features.  Continue to assign each feature a letter.  Once complete add each letter to the matrix assigning based on what your feel it's prioirty is an how long it will take to implement. If any one feature takes longer than 2hrs to complete than break it down into smaller tasks and reassign them a new letter. 
+<!-- Now create a separate list starting with A and assign it one of the features.  Continue to assign each feature a letter.  Once complete add each letter to the matrix assigning based on what your feel it's prioirty is an how long it will take to implement. If any one feature takes longer than 3hrs to complete than break it down into smaller tasks and reassign them a new letter.  -->
 
-Once complete tally up the time and determine how long the project will take to complete. Now break those features into MVP and PostMVP so you can guarantee you will have a fully functioning project to demo. 
+<!-- Once complete tally up the time and determine how long the project will take to complete. Now break those features into MVP and PostMVP so you can guarantee you will have a fully functioning project to demo.  -->
 
 ### MVP/PostMVP - 5min
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
-#### MVP (examples)
+#### MVP 
 
-- Pull data using google json api
-- Render data on page 
-- Allow user to choose favorites 
-- Save their choices in firebase
+- Use semantic markup for HTML and CSS, adhering to best practices
+- Use CSS GRID to create a multi-column layout
+- Use Flexbox for project cards
+- Use Bootstrap for navigation and hamburger menu
+- Be mobile first, then tablet and desktop responsive
+- Pull in projects via API call from google sheet
+- Be deployed and accessible online via Github Pages, Vercel, Netlify or Render
+- Make a form
 
 #### PostMVP 
 
-- Anything else that is not MVP
+- Make an interactive banner
+- Make my own icon/logo
+- Add animations
 
 ## Functional Components
 
@@ -89,29 +95,27 @@ Time frames are also key in the development cycle.  You have limited time to cod
 #### MVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Hamburger | H | 1hr | hr |
-| Project Previews | H | 3hr | hr |
-| Regular Nav | H | 1hr | hr |  
-| Adding Form | H | 1.5hr|  hr | 
-| Other sections and flex| M | 3hr | hr|
-| Working with API | H | 3hrs|  hr | 
-| Responsive | H | 3hr | hr | hr |
-| Social Media Icons | L | 1hr |  hr |
-| Total | H | 15.5hrs| hrs |
+| Basic HTML and CSS | H | 3hr | hr |
+| Grid | H | 2hr | hr |
+| Flexbox for project cards| H | 3hr | hr |  
+| Bootstrap Hamburger | M | 1.5hr | hr
+| Bootstrap navigation  | M | 1.5hr|  hr | 
+| Mobile first/Responsive| H | 3hr | hr|
+| Working with API | M | 0.5hr |  hr | 
+| Deploy site | M | 0.5hr | hr |
+| Adding Form | M | 1.5hr |  hr |
+| Total | H | 16.5hrs| hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Project Hover | L | 3hr | -hr | hr |
-| Banner letters wiggle | L | 1hr | hr |
-| Interactive Banner | M | 4hr | hr |
-| Materialize | H | 4hr | -hr | hr |
-| Bootstrap | H | 4hr | hr |
-| Make own icon | L | 4hr | hr |
-| Total | H | 20hrs| hrs |
+| Interactive Banner | M | 2hr | hr |
+| Make own icon/logo | L | 2hr | hr |
+| Add animations | L | 3hr | hr |
+| Total | H | 7hrs| hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
+ Use this section to list all supporting libraries and their role in the project. 
 
 ## Code Snippet
 
