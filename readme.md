@@ -67,7 +67,7 @@ Wireframing Resources:
 
 ### MVP/PostMVP - 5min
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+<!-- The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.   -->
 
 #### MVP 
 
@@ -88,9 +88,9 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 ## Functional Components
 
-Based on the initial logic defined in the previous sections try and breakdown the logic further into functional components, and by that we mean functions.  Try and capture what logic would need to be defined if the game was broken down into the following categories.
+<!-- Based on the initial logic defined in the previous sections try and breakdown the logic further into functional components, and by that we mean functions.  Try and capture what logic would need to be defined if the game was broken down into the following categories.
 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
+Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. -->
 
 #### MVP
 | Component | Priority | Estimated Time | Actual Time |
@@ -115,7 +115,13 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Total | H | 7hrs| hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and their role in the project. 
+ <!-- Use this section to list all supporting libraries and their role in the project.  -->
+
+| Library | Project Role |
+| --- | :---:|
+| JQUERY | HTML maniputlation, eventlistener, AJAX |
+| BOOTSTRAP | Design of the navigation and header |
+| FONTAWESOME | Icon resources |
 
 ## Code Snippet
 
