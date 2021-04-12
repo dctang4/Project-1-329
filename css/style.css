@@ -26,6 +26,7 @@ nav {
 
 #logo {
     font-weight: 900;
+    color: dimgray;
 }
 
 nav div.navbar {
@@ -50,7 +51,7 @@ a {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: darkslategrey;
+    background-color: #444957;
 }
 
 .banner {
@@ -75,7 +76,7 @@ a {
 }
 
 #about-title {
-    background-color: darkslateblue;
+    background-color: rgb(76, 72, 102);
     color: white;
 }
 
@@ -100,7 +101,7 @@ a {
 }
 
 #about-text {
-    background-color: darkslateblue;
+    background-color: rgb(76, 72, 102);
     color: white;
 }
 
