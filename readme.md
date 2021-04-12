@@ -47,10 +47,10 @@ Link To Site  | One Thing I'd Like To Incorporate |
 - [Tablet](https://photos.app.goo.gl/pps3SFvhqTjvRVGz8)
 - [Desktop](https://photos.app.goo.gl/QovRKePY5RiygNuHA)
 
-Wireframing Resources:
+<!-- Wireframing Resources:
 
 - [Mockflow](https://mockflow.com/app/#Wireframe)
-- [Figma](https://www.figma.com/)
+- [Figma](https://www.figma.com/) -->
 
 
 ## Time/Priority Matrix 
@@ -127,17 +127,19 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
+<!-- Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
 
 ```
 function reverse(string) {
 	// here is the code to reverse a string of text
 }
-```
+``` -->
 
 ## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
+ <!-- Use this section to list of all major issues encountered and their resolution. -->
 
 #### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+<!-- **ERROR**: 
+app.js:34 Uncaught SyntaxError: Unexpected identifier                                
+**RESOLUTION**: 
+Missing comma after first object in sources {} object -->
