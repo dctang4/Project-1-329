@@ -1,11 +1,10 @@
 * {
-    /* max-width: 1440px !important; */
     box-sizing: border-box !important;
-    /* margin-left: auto;
-    margin-right: auto; */
+    border: 1px solid black;
 }
 
-/* Header - navbar */
+
+/* ------------------- Header - navbar ------------------- */
 
 nav {
     display: flex;
@@ -22,19 +21,18 @@ nav div.navbar {
 }
 
 a {
-    font-size: 24px;
+    font-size: 20px;
 }
-
-
 
 .header-space {
     height: 72px;
+    background-color: lightgray
 }
 
-/* Main - Banner */
+/* ------------------- Main - Banner ------------------- */
 
 #banner {
-    height: 200px;
+    height: 15em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,33 +42,63 @@ a {
 
 .banner {
     color:white;
+    font-weight: 900;
     font-style: italic;
 }
 
 
-/* Main - About */
+/* ------------------- Main - About ------------------- */
 
 .title {
     text-align: center;
+    font-weight: 900;
+}
+
+#about {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+#pic {
+    text-align: center;
+}
+
+#my-pic {
+    height: 360px;
+    width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#skill-section {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+#extra {
+    display: none;
 }
 
 
-
-
-/* Responsive - Tablet */
+/* ------------------- Responsive - Tablet ------------------- */
 @media screen and (min-width: 768px) {
+    /* ------------------- nav ------------------- */
     #logo {
         font-size: 3em;
     }
 
     div.navbar-nav a.nav-link {
         color: black;
+        font-size: 1.5em;
     }
 
     .header-space {
         height: 81px;
     }
 
+    /* ------------------- banner ------------------- */
     #banner {
         height: 25em;
     }
@@ -83,12 +111,22 @@ a {
         font-size: 3em;
 
     }
+
+    /* ------------------- about ------------------- */
+    .title {
+        font-size: 2.5em;
+    }
+
+    #extra {
+        display: flex;
+    }
 }
 
 
 
-/* Responsive - Desktop */
+/* ------------------- Responsive - Desktop ------------------- */
 @media screen and (min-width: 1024px) {
+    /* ------------------- nav ------------------- */
     #logo {
         font-size: 4em;
     }
@@ -110,16 +148,23 @@ a {
     }
 
     a.nav-element {
-        color: black;
+        color: rgb(120, 120, 120);
         font-size: 2.0em;
+    }
+
+    /* :active - when when you click the the tag element something
+    happens as you specify (only fo a brief moment)*/
+    a.nav-element:active {
+        color: black
     }
 
     .header-space {
         height: 100px;
     }
 
+    /* ------------------- banner ------------------- */
     #banner {
-        height: 40em;
+        height: 35em;
     }
 
     #my-name {
@@ -129,5 +174,10 @@ a {
     #my-title {
         font-size: 4em;
 
+    }
+
+    /*------------------- about ------------------- */
+    .title {
+        font-size: 3.5em
     }
 }
