@@ -1,0 +1,80 @@
+* {
+    max-width: 1440px !important;
+    box-sizing: border-box !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+
+}
+/* Header - navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    margin: 0;
+}
+
+nav div.navbar {
+    display: none;
+    margin: 0;
+}
+
+a {
+    font-size: 24px;
+}
+
+a.nav-element {
+    color: black
+}
+
+.header-space {
+    height: 72px;
+}
+
+/* Main - Banner */
+
+#banner {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: darkslategrey;
+}
+
+.banner {
+    color:white;
+}
+
+
+/* Main - About */
+
+.title {
+    text-align: center;
+}
+
+
+
+
+/* Responsive - Tablet */
+@media screen and (min-width: 768px) {
+    
+}
+
+
+
+/* Responsive - Desktop */
+@media screen and (min-width: 1024px) {
+    button {
+        display: none
+    }
+
+    nav div.navbar {
+        display: flex
+    }
+}
