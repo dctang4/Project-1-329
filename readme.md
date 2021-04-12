@@ -6,9 +6,9 @@
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
+<!-- This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
 
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
+You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`. -->
 
 |  Day | Deliverable | Status
 |---|---| ---|
@@ -30,7 +30,7 @@ This project is to use everything I've learned so far to build my own portfolio.
 
 ## Portfolio I want to Emulate
 
-Search and compare at least 3 profile web sites.  Record your findings in the table below and include some aspect of the site that you would like to incorporate into your own site.
+<!-- Search and compare at least 3 profile web sites.  Record your findings in the table below and include some aspect of the site that you would like to incorporate into your own site. -->
 
 Link To Site  | One Thing I'd Like To Incorporate | 
 | ------------- | ------------- |
@@ -41,7 +41,7 @@ Link To Site  | One Thing I'd Like To Incorporate |
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
+<!-- Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.   -->
 
 - [Mobile](https://photos.app.goo.gl/qfJtrECupTCufYvbA)
 - [Tablet](https://photos.app.goo.gl/pps3SFvhqTjvRVGz8)
@@ -103,8 +103,9 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Mobile first/Responsive| H | 3hr | hr|
 | Working with API | M | 0.5hr |  hr | 
 | Deploy site | M | 0.5hr | hr |
+| Project Previews | H | 3hr | hr |
 | Adding Form | M | 1.5hr |  hr |
-| Total | H | 16.5hrs| hrs |
+| Total | H | 19.5hrs| hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
