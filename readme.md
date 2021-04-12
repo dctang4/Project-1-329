@@ -110,10 +110,11 @@ Time frames are also key in the development cycle.  You have limited time to cod
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Interactive Banner | M | 2hr | hr |
+| Interactive Banner | L | 2.5hr | hr |
 | Make own icon/logo | L | 2hr | hr |
 | Add animations | L | 3hr | hr |
-| Total | H | 7hrs| hrs |
+| Add carousel | M | 2hr | hr |
+| Total | H | 9.5hrs| hrs |
 
 ## Additional Libraries
  <!-- Use this section to list all supporting libraries and their role in the project.  -->
