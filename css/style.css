@@ -1,13 +1,10 @@
 * {
-    max-width: 1440px !important;
+    /* max-width: 1440px !important; */
     box-sizing: border-box !important;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
-body {
-
-}
 /* Header - navbar */
 
 nav {
@@ -16,7 +13,7 @@ nav {
 }
 
 #logo {
-    margin: 0;
+    font-weight: 900;
 }
 
 nav div.navbar {
@@ -28,9 +25,7 @@ a {
     font-size: 24px;
 }
 
-a.nav-element {
-    color: black
-}
+
 
 .header-space {
     height: 72px;
@@ -49,6 +44,7 @@ a.nav-element {
 
 .banner {
     color:white;
+    font-style: italic;
 }
 
 
@@ -63,18 +59,75 @@ a.nav-element {
 
 /* Responsive - Tablet */
 @media screen and (min-width: 768px) {
-    
+    #logo {
+        font-size: 3em;
+    }
+
+    div.navbar-nav a.nav-link {
+        color: black;
+    }
+
+    .header-space {
+        height: 81px;
+    }
+
+    #banner {
+        height: 25em;
+    }
+
+    #my-name {
+        font-size: 5em;
+    }
+
+    #my-title {
+        font-size: 3em;
+
+    }
 }
 
 
 
 /* Responsive - Desktop */
 @media screen and (min-width: 1024px) {
+    #logo {
+        font-size: 4em;
+    }
+
+    nav {
+        display: inline;
+    }
+
     button {
         display: none
     }
 
+    div.collapse {
+        display:none;
+    }
+
     nav div.navbar {
         display: flex
+    }
+
+    a.nav-element {
+        color: black;
+        font-size: 2.0em;
+    }
+
+    .header-space {
+        height: 100px;
+    }
+
+    #banner {
+        height: 40em;
+    }
+
+    #my-name {
+        font-size: 7em;
+    }
+
+    #my-title {
+        font-size: 4em;
+
     }
 }
