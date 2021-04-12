@@ -3,6 +3,19 @@
     /* border: 1px solid black; */
 }
 
+.title,
+#skill-section,
+#about-text,
+#project-cards,
+#my-email, 
+form,
+footer {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+
 
 /* ------------------- Header - navbar ------------------- */
 
@@ -52,6 +65,7 @@ a {
 .title {
     text-align: center;
     font-weight: 900;
+    margin: 0;
 }
 
 #about {
@@ -60,8 +74,14 @@ a {
     grid-template-rows: auto auto auto auto;
 }
 
+#about-title {
+    background-color: darkslateblue;
+    color: white;
+}
+
 #pic {
     text-align: center;
+    background-color: lightsteelblue;
 }
 
 #my-pic {
@@ -75,12 +95,45 @@ a {
 #skill-section {
     display: grid;
     grid-template-rows: auto auto;
+    background-color: lightgray;
+    margin: 0;
+}
+
+#about-text {
+    background-color: darkslateblue;
+    color: white;
 }
 
 #extra {
     display: none;
 }
 
+
+/* ------------------- Main - Projects ------------------- */
+
+#projects {
+    background-color: #444957;
+    color: white;
+}
+
+#project-cards {
+    background-color: lightsteelblue;
+}
+
+
+/* ------------------- Main - Contact ------------------- */
+
+#contact {
+    background-color: slategrey;
+}
+
+
+/* ------------------- Footer ------------------- */
+
+footer {
+    background-color: black;
+    color: white;
+}
 
 /* ------------------- Responsive - Tablet ------------------- */
 @media screen and (min-width: 768px) {
