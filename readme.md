@@ -95,15 +95,15 @@ Time frames are also key in the development cycle.  You have limited time to cod
 #### MVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Basic HTML and CSS | H | 3hr | hr |
-| Grid | H | 2hr | hr |
+| Basic HTML and CSS | H | 3hr | 4hr |
+| Grid | H | 2hr | 2.5hr |
 | Flexbox for project cards| H | 3hr | hr |  
-| Bootstrap Hamburger | M | 1.5hr | hr
-| Bootstrap navigation  | M | 1.5hr|  hr | 
+| Bootstrap Hamburger | M | 1.5hr | 1hr |
+| Bootstrap navigation  | M | 1.5hr|  1.5hr | 
 | Mobile first/Responsive| H | 3hr | hr|
-| Working with API | M | 0.5hr |  hr | 
-| Deploy site | M | 0.5hr | hr |
-| Project Previews | H | 3hr | hr |
+| Working with API | M | 0.5hr | hr | 
+| Deploy site | M | 0.5hr | 1hr |
+| Project Previews | H | 3hr | 4hr |
 | Adding Form | M | 1.5hr |  hr |
 | Total | H | 19.5hrs| hrs |
 
