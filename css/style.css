@@ -1,3 +1,7 @@
+/* ---------------------------------------------- */
+/* ------------------- Mobile ------------------- */
+/* ---------------------------------------------- */
+
 * {
     box-sizing: border-box !important;
     /* border: 1px solid black; */
@@ -13,8 +17,6 @@ footer {
     padding: 10px;
     margin-bottom: 10px;
 }
-
-
 
 
 /* ------------------- Header - navbar ------------------- */
@@ -42,6 +44,7 @@ a {
     height: 72px;
     background-color: lightgray
 }
+
 
 /* ------------------- Main - Banner ------------------- */
 
@@ -86,18 +89,25 @@ a {
 }
 
 #my-pic {
-    height: 360px;
-    width: 300px;
-    text-align: center;
+    height: 300px;
+    width: 250px;
     margin-left: auto;
     margin-right: auto;
 }
 
 #skill-section {
-    display: grid;
-    grid-template-rows: auto auto;
     background-color: lightgray;
-    margin: 0;
+    margin: 0px;
+    padding-bottom: 1px;
+}
+
+#skills {
+    text-align: center;
+}
+
+#skills-list {
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 #about-text {
@@ -136,7 +146,10 @@ footer {
     color: white;
 }
 
+/* ----------------------------------------------------------- */
 /* ------------------- Responsive - Tablet ------------------- */
+/* ----------------------------------------------------------- */
+
 @media screen and (min-width: 768px) {
     /* ------------------- nav ------------------- */
     #logo {
@@ -171,14 +184,38 @@ footer {
         font-size: 2.5em;
     }
 
-    #extra {
-        display: flex;
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
     }
+
+    #pic {
+        grid-row: 1 / 3;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+    #my-pic {
+        height: 360px;
+        width: 300px;
+    }
+
+    #skill-section {
+        margin-bottom: 10px;
+    }
+
+
+
+    /* #extra {
+        display: flex;
+    } */
 }
 
 
-
+/* ------------------------------------------------------------ */
 /* ------------------- Responsive - Desktop ------------------- */
+/* ------------------------------------------------------------ */
 @media screen and (min-width: 1024px) {
     /* ------------------- nav ------------------- */
     #logo {
@@ -233,5 +270,32 @@ footer {
     /*------------------- about ------------------- */
     .title {
         font-size: 3.5em
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto;
+    }
+
+    #my-pic {
+        height: 480px;
+        width: 400px;
+    }
+
+    #skills {
+        font-size: 2em;
+    }
+
+    .skill {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    #extra {
+        display: flex;
     }
 }
