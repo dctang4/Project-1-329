@@ -26,7 +26,19 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1gG9ADNvPO4dN1fL4r-pTxV-QYtfJ
     // jquery to render your project
     /////////////////////////////////////////////////
 
+    projects.forEach(obj => {
+        const $card = $("<div class='card'>");
+        const $project = $("<h3 class='project'>").text(obj.project);
+        const $liveurl = $(`<a href=${obj.liveurl} class='btn btn-secondary liveurl'>`).text("Link");
+        const $giturl = $(`<a href=${obj.giturl} class='btn btn-secondary giturl'>`).text("Github");
+        const $image = $(`<img src=./pics/${obj.image} class='image'>`);
+        const $description = $("<p class='description'>").text(obj.description)
 
+        const $links = $("<div class='links'>");
+        $links.append($liveurl, $giturl,)
+        $card.append($project, $image, $description, $links)
+        $("div#project-cards").append($card)
+    });
 
 
 

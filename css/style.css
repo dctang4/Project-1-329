@@ -156,7 +156,38 @@ a {
 
 #project-cards {
     background-color: rgb(168, 164, 182);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
+
+.card {
+    height: 350px;
+    width: 275px;
+    color:  black;
+    text-align: center;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #D3D3D3;
+}
+
+/* .project {
+
+} */
+
+.image {
+    height: 180px;
+    width: 95%;
+    margin: 0 2.5%;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
 
 
 /* ------------------- Main - Contact ------------------- */
@@ -238,10 +269,20 @@ footer {
     }
 
 
+    /* ------------------- projects ------------------- */
 
-    /* #extra {
-        display: flex;
-    } */
+
+
+
+    /* ------------------- contact ------------------- */
+
+
+
+
+    /* ------------------- footer ------------------- */
+
+
+
 }
 
 
@@ -299,7 +340,7 @@ footer {
 
     }
 
-    /*------------------- about ------------------- */
+    /* ------------------- about ------------------- */
     .title {
         font-size: 3.5em
     }
@@ -335,4 +376,20 @@ footer {
     #extra {
         display: flex;
     }
+
+
+    /* ------------------- projects ------------------- */
+
+
+
+
+    /* ------------------- contact ------------------- */
+
+
+
+
+    /* ------------------- footer ------------------- */
+
+
+
 }
