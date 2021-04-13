@@ -84,8 +84,10 @@ a {
 }
 
 #pic {
+    position: relative;
     text-align: center;
-    background-color: lightsteelblue;
+    background-color: lightgrey;
+    overflow: hidden;
 }
 
 #my-pic {
@@ -93,10 +95,35 @@ a {
     width: 250px;
     margin-left: auto;
     margin-right: auto;
+    opacity: 1;
+    transition: all 1s;
+}
+
+#pic:hover #my-pic {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+#pic h2 {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    font-weight: 800;
+    opacity: 0;
+    transition: all 1s;
+    transform: translate(0, 145px);
+}
+
+#pic:hover h2 {
+    opacity: 0.6;
+    transform: translate(0, 0px)
 }
 
 #skill-section {
-    background-color: lightgray;
+    background-color: slategray;
     margin: 0px;
     padding-bottom: 1px;
 }
@@ -201,6 +228,11 @@ footer {
         width: 300px;
     }
 
+    #pic h2 {
+        font-size: 2.5em;
+        transform: translate(0, 170px);
+    }
+
     #skill-section {
         margin-bottom: 10px;
     }
@@ -274,13 +306,18 @@ footer {
 
     .grid {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 2fr 3fr;
         grid-template-rows: auto auto;
     }
 
     #my-pic {
         height: 480px;
         width: 400px;
+    }
+
+    #pic h2 {
+        font-size: 3.5em;
+        transform: translate(0, 225px);
     }
 
     #skills {
