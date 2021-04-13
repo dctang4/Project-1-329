@@ -159,27 +159,32 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 0;
 }
 
 .card {
-    height: 350px;
-    width: 275px;
+    height: 360px;
+    width: 300px;
     color:  black;
     text-align: center;
     margin: 10px;
-    border-radius: 20px;
+    border-radius: 12px;
     background-color: #D3D3D3;
 }
 
-/* .project {
-
-} */
+.project {
+    font-weight: 700;
+}
 
 .image {
-    height: 180px;
+    height: 190px;
     width: 95%;
     margin: 0 2.5%;
     text-align: center;
+}
+
+.description {
+    font-size: 20px;
 }
 
 .links {
