@@ -178,6 +178,14 @@ a {
     background-color: #D3D3D3;
 }
 
+.card:hover {
+    transform: scale(1.08);
+}
+
+.card:hover .image {
+    transform: scale(1.05);
+}
+
 .project {
     font-weight: 700;
 }
@@ -196,6 +204,10 @@ a {
 .links {
     display: flex;
     justify-content: space-evenly;
+}
+
+.links .btn:hover {
+    font-weight: bold;
 }
 
 /* ------------------- Main - Contact ------------------- */
@@ -219,22 +231,28 @@ input, textarea {
 .name, .email {
     width: 300px;
     padding: 5px;
-    border: 2px solid #ccc;
+    border: 3px solid #444957;
 }
 
 .message {
     width: 300px;
     height: 150px;
     padding: 5px;
-    border: 2px solid #ccc;
+    border: 3px solid #444957;
     border-radius: 4px;
     background-color: #f8f8f8;
 }
 
 .submit {
-    border: 2px solid #ccc;
+    border: 3px solid #444957;
     width: 80px;
     padding: 2px;
+}
+
+.submit:hover {
+    background-color: lightgrey;
+    font-weight: bold;
+    border: 3px solid whitesmoke;
 }
 
 /* ------------------- Footer ------------------- */
