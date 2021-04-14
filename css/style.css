@@ -1,7 +1,6 @@
 /* ---------------------------------------------- */
 /* ------------------- Mobile ------------------- */
 /* ---------------------------------------------- */
-
 * {
     box-sizing: border-box !important;
     /* border: 1px solid black; */
@@ -18,9 +17,7 @@ footer {
     margin-bottom: 10px;
 }
 
-
 /* ------------------- Header - navbar ------------------- */
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -45,9 +42,7 @@ a {
     background-color: lightgray
 }
 
-
 /* ------------------- Main - Banner ------------------- */
-
 #banner {
     height: 15em;
     display: flex;
@@ -63,9 +58,7 @@ a {
     font-style: italic;
 }
 
-
 /* ------------------- Main - About ------------------- */
-
 .title {
     text-align: center;
     font-weight: 900;
@@ -146,9 +139,7 @@ a {
     display: none;
 }
 
-
 /* ------------------- Main - Projects ------------------- */
-
 #projects {
     background-color: #444957;
     color: white;
@@ -192,11 +183,7 @@ a {
     justify-content: space-evenly;
 }
 
-
-
-
 /* ------------------- Main - Contact ------------------- */
-
 #contact, form{
     background-color: slategrey;
     display: flex;
@@ -234,9 +221,7 @@ input, textarea {
     padding: 2px;
 }
 
-
 /* ------------------- Footer ------------------- */
-
 footer {
     background-color: black;
     color: white;
@@ -272,7 +257,6 @@ footer {
 
     #my-title {
         font-size: 3em;
-
     }
 
     /* ------------------- about ------------------- */
@@ -306,12 +290,10 @@ footer {
         margin-bottom: 10px;
     }
 
-
     /* ------------------- projects ------------------- */
 
 
     /* ------------------- contact ------------------- */
-
     form {
         display: grid;
         grid-template-columns: 3fr .3fr 3fr;
@@ -342,19 +324,17 @@ footer {
         margin-left: auto;
     }
 
-
     /* ------------------- footer ------------------- */
-
     footer {
         font-size: 18px;
     }
-
 }
 
 
 /* ------------------------------------------------------------ */
 /* ------------------- Responsive - Desktop ------------------- */
 /* ------------------------------------------------------------ */
+
 @media screen and (min-width: 1024px) {
     /* ------------------- nav ------------------- */
     #logo {
@@ -443,14 +423,10 @@ footer {
         display: flex;
     }
 
-
     /* ------------------- projects ------------------- */
 
 
-
-
     /* ------------------- contact ------------------- */
-
     #contact {
         display: grid;
         grid-template-columns: 3fr .3fr 3fr;
@@ -505,9 +481,7 @@ footer {
         margin: auto;
     }
     /* ------------------- footer ------------------- */
-
     footer {
         font-size: 21px;
     }
-
 }

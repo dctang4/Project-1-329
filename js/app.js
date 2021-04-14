@@ -37,7 +37,7 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1gG9ADNvPO4dN1fL4r-pTxV-QYtfJ
         const $links = $("<div class='links'>");
         $links.append($liveurl, $giturl,)
         $card.append($project, $image, $description, $links)
-        $("div#project-cards").append($card)
+        $("#project-cards").append($card)
     });
 
 
