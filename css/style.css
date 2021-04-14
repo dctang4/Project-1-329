@@ -176,6 +176,7 @@ a {
     margin: 20px 10px;
     border-radius: 12px;
     background-color: #D3D3D3;
+    transition: all 0.5s;
 }
 
 .card:hover {
@@ -195,6 +196,7 @@ a {
     width: 95%;
     margin: 0 2.5%;
     text-align: center;
+    transition: all 0.5s;
 }
 
 .description {
