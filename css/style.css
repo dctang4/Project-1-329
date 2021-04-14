@@ -24,11 +24,13 @@ nav.navbar {
 }
 
 #logo {
-    font-weight: 900;
+    /* font-weight: 900;
     font-style: italic;
-    color: dimgray;
+    color: dimgray; */
+    height: 50px;
     align-self: center;
     margin: 0;
+    opacity: .4;
 }
 
 nav div.navbar {
@@ -53,7 +55,10 @@ a {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: #444957;
+    /* background-color: #444957; */
+    background-image: url("https://res.cloudinary.com/dvxvez8mj/image/upload/v1618430797/background-dragon_itutzd.jpg");
+    background-position: center;
+    background-size: 690px;
 }
 
 .banner {
@@ -277,7 +282,8 @@ footer {
 @media screen and (min-width: 768px) {
     /* ------------------- nav ------------------- */
     #logo {
-        font-size: 3em;
+        /* font-size: 3em; */
+        height: 57px;
     }
 
     div.navbar-nav a.nav-link {
@@ -292,6 +298,7 @@ footer {
     /* ------------------- banner ------------------- */
     #banner {
         height: 25em;
+        background-size: 950px;
     }
 
     #my-name {
@@ -382,7 +389,8 @@ footer {
 @media screen and (min-width: 1024px) {
     /* ------------------- nav ------------------- */
     #logo {
-        font-size: 4em;
+        /* font-size: 4em; */
+        height: 80px;
         padding-left: 16px;
     }
 
@@ -420,6 +428,7 @@ footer {
     /* ------------------- banner ------------------- */
     #banner {
         height: 35em;
+        background-size: 110em 35em;
     }
 
     #my-name {
