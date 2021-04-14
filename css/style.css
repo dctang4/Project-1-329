@@ -7,6 +7,10 @@
     font-family: Raleway;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .title,
 #skill-section,
 #about-text,
@@ -43,7 +47,7 @@ a {
     font-size: 20px;
 }
 
-.header-space {
+#header-space {
     height: 58px;
     background-color: lightgray
 }
@@ -72,6 +76,7 @@ a {
 .title {
     text-align: center;
     font-weight: 900;
+    font-size: 2.2em;
     margin: 0;
 }
 
@@ -275,6 +280,13 @@ footer {
     align-self: center;
 }
 
+.icon {
+    color:white
+}
+.icon:hover {
+    color: #DBDBDB;
+}
+
 /* ----------------------------------------------------------- */
 /* ------------------- Responsive - Tablet ------------------- */
 /* ----------------------------------------------------------- */
@@ -291,7 +303,7 @@ footer {
         font-size: 1.5em;
     }
 
-    .header-space {
+    #header-space {
         height: 67px;
     }
 
@@ -311,7 +323,7 @@ footer {
 
     /* ------------------- about ------------------- */
     .title {
-        font-size: 2.5em;
+        font-size: 2.7em;
     }
 
     .grid {
@@ -421,7 +433,7 @@ footer {
         color: black
     }
 
-    .header-space {
+    #header-space {
         height: 80px;
     }
 
