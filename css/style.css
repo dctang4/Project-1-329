@@ -197,8 +197,41 @@ a {
 
 /* ------------------- Main - Contact ------------------- */
 
-#contact {
+#contact, form{
     background-color: slategrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+#my-email {
+    font-size: 20px;
+}
+
+input, textarea {
+    margin : 5px 0;
+}
+
+.name, .email {
+    width: 300px;
+    padding: 5px;
+    border: 2px solid #ccc;
+}
+
+.message {
+    width: 300px;
+    height: 150px;
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    /* resize: none; */
+}
+
+.submit {
+    border: 2px solid #ccc;
+    width: 80px;
+    padding: 2px;
 }
 
 
@@ -277,16 +310,44 @@ footer {
     /* ------------------- projects ------------------- */
 
 
-
-
     /* ------------------- contact ------------------- */
 
+    form {
+        display: grid;
+        grid-template-columns: 3fr .3fr 3fr;
+        grid-template-rows: repeat(3, auto);
+    }
 
+    .name {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 350px;
+    }
+
+    .email {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        width: 350px;
+    }
+
+    .message {
+        grid-column: 3 / 4;
+        grid-row: 1 / 4;
+        width: 350px;
+    }
+
+    .submit {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        margin-left: auto;
+    }
 
 
     /* ------------------- footer ------------------- */
 
-
+    footer {
+        font-size: 18px;
+    }
 
 }
 
@@ -390,11 +451,63 @@ footer {
 
     /* ------------------- contact ------------------- */
 
+    #contact {
+        display: grid;
+        grid-template-columns: 3fr .3fr 3fr;
+        grid-template-rows: repeat(5, auto);
+    }
 
+    #contact-title {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+    }
 
+    #my-email {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        order: 1;
+        text-align: right;
+        margin: 25px 0 0 0;
+        padding: 0;
+        font-size: 24px;
+    }
 
+    form {
+        grid-column: 1 / 4;
+        grid-row: 2 / 6;
+        grid-template-columns: 3fr .2fr 3fr;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .name {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        width: 350px;
+        margin-left: auto;
+    }
+
+    .email {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        width: 350px;
+        margin-left: auto;
+    }
+
+    .message {
+        grid-column: 3 / 4;
+        grid-row: 1 / 4;
+        width: 500px;
+    }
+
+    .submit {
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
+        margin: auto;
+    }
     /* ------------------- footer ------------------- */
 
-
+    footer {
+        font-size: 21px;
+    }
 
 }
