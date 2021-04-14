@@ -26,23 +26,34 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1gG9ADNvPO4dN1fL4r-pTxV-QYtfJ
     // jquery to render your project
     /////////////////////////////////////////////////
 
+    // loop over each object in the projects array and create a project card for each object
     projects.forEach(obj => {
+        // create a parent tag to house the tags that have the components that make up the card
         const $card = $("<div class='card'>");
+
+        // create a tag for the project name
         const $project = $("<h3 class='project'>").text(obj.project);
+
+        // create a tag that links to the project live url
         const $liveurl = $(`<a href=${obj.liveurl} class='btn btn-secondary liveurl'>`).text("Link");
+
+        // create a tag that links to the github project repository
         const $giturl = $(`<a href=${obj.giturl} class='btn btn-secondary giturl'>`).text("Github");
+
+        // create a tag with an image of the project
         const $image = $(`<img src=./pics/${obj.image} class='image'>`);
+
+        // create a tage with the description of the project
         const $description = $("<p class='description'>").text(obj.description)
 
+        // create a parent tag to house the tags with the links
         const $links = $("<div class='links'>");
+
+        // apend the tags to their parent's
         $links.append($liveurl, $giturl,)
         $card.append($project, $image, $description, $links)
         $("#project-cards").append($card)
     });
-
-
-
-
 
     /////////////////////////////////////////////////
     // 
@@ -52,4 +63,36 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1gG9ADNvPO4dN1fL4r-pTxV-QYtfJ
 // .catch in case of an error
 .catch((error) => {
     console.error(error)
+})
+
+
+////////////////////////////////////////////
+// Contact submit - Eventlistener
+////////////////////////////////////////////
+
+const $form = $("form");
+const $name = $("input[name='name']");
+const $email = $("input[name='email']");
+const $thanks = $("<div id='thanks'>").css({
+    "text-align": "center",
+    "font-weight": "bold",
+    "color": "white",
+    "padding": "10px"
+});
+
+$form.on("submit", (event) => {
+    event.preventDefault();  // prevent default refresh
+    $thanks.empty();  // empty the tag of previous contact info
+
+    // only print text on the page when there is both a name and email input.
+    if ($name.val() !==  "" && $email.val() !== "") {
+        $thanks.text(`Thanks ${$name.val()} for reaching out.  
+        I'll email you back at ${$email.val()} as soon as possible!`);
+        $("#contact").append($thanks);
+        $thanks
+    }
+
+    // reset the input values
+    $name.val("");
+    $email.val("");
 })

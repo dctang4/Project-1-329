@@ -218,7 +218,6 @@ input, textarea {
     border: 2px solid #ccc;
     border-radius: 4px;
     background-color: #f8f8f8;
-    /* resize: none; */
 }
 
 .submit {
@@ -445,7 +444,7 @@ footer {
     #contact {
         display: grid;
         grid-template-columns: 3fr .3fr 3fr;
-        grid-template-rows: repeat(5, auto);
+        grid-template-rows: repeat(6, auto);
     }
 
     #contact-title {
@@ -493,7 +492,12 @@ footer {
     .submit {
         grid-column: 1 / 4;
         grid-row: 4 / 5;
-        margin: auto;
+        margin: 10px auto;
+    }
+
+    #thanks {
+        grid-column: 1 / 4;
+        grid-row: 6 / 7;
     }
     /* ------------------- footer ------------------- */
     footer {
