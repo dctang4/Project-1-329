@@ -60,6 +60,7 @@ a {
     color:white;
     font-weight: 900;
     font-style: italic;
+    animation-duration: 2s;
 }
 
 /* ------------------- Main - About ------------------- */
@@ -69,15 +70,24 @@ a {
     margin: 0;
 }
 
+.title:hover {
+    animation: pulse;
+    animation-duration: 0.5s;
+}
+
 #about {
+    background-color: rgb(76, 72, 102);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
 }
 
 #about-title {
-    background-color: rgb(76, 72, 102);
     color: white;
+}
+
+#about .grid {
+    background-color: white;
 }
 
 #pic {
@@ -86,6 +96,7 @@ a {
     background-color: lightgrey;
     overflow: hidden;
 }
+
 
 #my-pic {
     height: 300px;
@@ -412,8 +423,8 @@ footer {
     }
 
     #my-pic {
-        height: 480px;
-        width: 400px;
+        height: 468px;
+        width: 390px;
     }
 
     #pic h2 {

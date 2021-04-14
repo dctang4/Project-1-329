@@ -65,6 +65,8 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1gG9ADNvPO4dN1fL4r-pTxV-QYtfJ
     console.error(error)
 })
 
+$(".title").addClass("animate__animated")
+
 
 ////////////////////////////////////////////
 // Contact submit - Eventlistener
@@ -92,7 +94,7 @@ $form.on("submit", (event) => {
         $thanks
     }
 
-    // reset the input values
+    // reset the input value
     $name.val("");
     $email.val("");
 })
