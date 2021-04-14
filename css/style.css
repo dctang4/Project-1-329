@@ -11,27 +11,29 @@
 #skill-section,
 #about-text,
 #project-cards,
-#my-email, 
-form,
-footer {
+form{
     padding: 10px;
     margin-bottom: 10px;
 }
 
 /* ------------------- Header - navbar ------------------- */
-nav {
+nav.navbar {
     display: flex;
     justify-content: space-between;
+    padding: 5px 10px;
 }
 
 #logo {
     font-weight: 900;
     color: dimgray;
+    align-self: center;
+    margin: 0;
 }
 
 nav div.navbar {
     display: none;
     margin: 0;
+    padding-right: 0;
 }
 
 a {
@@ -39,7 +41,7 @@ a {
 }
 
 .header-space {
-    height: 72px;
+    height: 58px;
     background-color: lightgray
 }
 
@@ -253,7 +255,7 @@ footer {
     }
 
     .header-space {
-        height: 81px;
+        height: 67px;
     }
 
     /* ------------------- banner ------------------- */
@@ -349,6 +351,7 @@ footer {
     /* ------------------- nav ------------------- */
     #logo {
         font-size: 4em;
+        padding-left: 16px;
     }
 
     nav {
@@ -379,7 +382,7 @@ footer {
     }
 
     .header-space {
-        height: 100px;
+        height: 90px;
     }
 
     /* ------------------- banner ------------------- */
@@ -482,7 +485,7 @@ footer {
     .message {
         grid-column: 3 / 4;
         grid-row: 1 / 4;
-        width: 500px;
+        width: 450px;
     }
 
     .submit {
