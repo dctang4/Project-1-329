@@ -4,6 +4,7 @@
 * {
     box-sizing: border-box !important;
     /* border: 1px solid black; */
+    font-family: Raleway;
 }
 
 .title,
@@ -227,6 +228,13 @@ input, textarea {
 footer {
     background-color: black;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+#footer-name {
+    align-self: center;
 }
 
 /* ----------------------------------------------------------- */
