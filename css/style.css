@@ -25,6 +25,7 @@ nav.navbar {
 
 #logo {
     font-weight: 900;
+    font-style: italic;
     color: dimgray;
     align-self: center;
     margin: 0;
@@ -339,6 +340,7 @@ footer {
     /* ------------------- footer ------------------- */
     footer {
         font-size: 18px;
+        font-style: italic;
     }
 }
 
