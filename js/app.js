@@ -95,7 +95,6 @@ $form.on("submit", (event) => {
         $("#contact").append($thanks);
         $thanks
     }
-
     // reset the input value
     $name.val("");
     $email.val("");

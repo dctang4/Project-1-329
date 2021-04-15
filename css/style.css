@@ -2,7 +2,7 @@
 /* ------------------- Mobile ------------------- */
 /* ---------------------------------------------- */
 * {
-    /* box-sizing: border-box !important; */
+    box-sizing: border-box;
     font-family: Raleway;
 }
 
@@ -57,10 +57,9 @@ a {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    /* background-color: #444957; */
     background-image: url("https://res.cloudinary.com/dvxvez8mj/image/upload/v1618456640/background_chmhga.jpg");
     background-position: center;
-    opacity: 0.8;
+    opacity: 0.75;
     background-size: 768px;
     transition: all 2s;
 }
@@ -71,7 +70,8 @@ a {
 
 .banner {
     color:white;
-    /* text-shadow: -8px 4px 3px black; */
+    /* text-shadow: 
+    x-axis(+ = right) y-axis(+ = down) blur color; */
     text-shadow:-1px 1px 0px #000,
                 1px 1px 0px #000,
                 1px -1px 0px #000,
@@ -119,13 +119,15 @@ a {
     width: 250px;
     margin-left: auto;
     margin-right: auto;
-    opacity: 1;
+    opacity: 0.75;
     transition: all 1s;
 }
 
 #pic:hover #my-pic {
     transform: scale(1.1);
-    opacity: 0.8;
+    opacity: 1;
+    /* box-shadow: 
+    x-axis(+ = right) y-axis(+ = down) blur padding color; */
     box-shadow: 0 0 10px 5px black;
 }
 
@@ -193,6 +195,7 @@ a {
     background-color: #D3D3D3;
     border: 1px solid white;
     box-shadow: 0 0 6px 2px white;
+    opacity: 0.75;
     transition: all 0.5s;
 }
 
@@ -253,7 +256,11 @@ input, textarea {
     border-radius: 7px;
     width: 300px;
     padding: 5px;
-    background-color: #f8f8f8;    
+    background-color: #f1f1f1;    
+}
+
+.name:focus, .email:focus, textarea:focus {
+    background-color: white;   
 }
 
 .message {
