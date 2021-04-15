@@ -126,6 +126,7 @@ a {
 #pic:hover #my-pic {
     transform: scale(1.1);
     opacity: 0.8;
+    box-shadow: 0 0 10px 5px black;
 }
 
 #pic h2 {
@@ -191,12 +192,13 @@ a {
     border-radius: 10px;
     background-color: #D3D3D3;
     border: 1px solid white;
-    opacity: 0.75;
+    box-shadow: 0 0 6px 2px white;
     transition: all 0.5s;
 }
 
 .card:hover {
     transform: scale(1.08);
+    box-shadow: 0 0 10px 6px white;
     opacity: 1;
 }
 
@@ -440,7 +442,7 @@ footer {
     }
 
     a.nav-element:hover {
-        color: black
+        color: #444957
     }
 
     #header-space {
