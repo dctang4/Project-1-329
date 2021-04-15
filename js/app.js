@@ -35,7 +35,7 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1gG9ADNvPO4dN1fL4r-pTxV-QYtfJ
         const $project = $("<h3 class='project'>").text(obj.project);
 
         // create a tag that links to the project live url
-        const $liveurl = $(`<a href=${obj.liveurl} class='btn btn-secondary liveurl' target='_blank' rel='noopener noreferrer'>`).text("Link");
+        const $liveurl = $(`<a href=${obj.liveurl} class='btn btn-secondary liveurl' target='_blank' rel='noopener noreferrer'>`).text("App");
 
         // create a tag that links to the github project repository
         const $giturl = $(`<a href=${obj.giturl} class='btn btn-secondary giturl' target='_blank' rel='noopener noreferrer'>`).text("Github");

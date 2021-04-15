@@ -12,10 +12,10 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Incomplete
-|Day 1| Wireframes / Priority Matrix / Timeline | Incomplete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Day 4| MVP & Bug Fixes | Incomplete
+|Day 1| Project Description | Complete
+|Day 1| Wireframes / Priority Matrix / Timeline | Complete
+|Day 3| Core Application Structure (HTML, CSS, etc.) | Complete
+|Day 4| MVP & Bug Fixes | Complete
 |Day 5| Final Touches | Incomplete
 |Day 6| Present | Incomplete
 
@@ -97,24 +97,24 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | --- | :---: |  :---: | :---: | 
 | Basic HTML and CSS | H | 3hr | 4hr |
 | Grid | H | 2hr | 2.5hr |
-| Flexbox for project cards| H | 3hr | hr |  
+| Flexbox for project cards| H | 3hr | 2hr |  
 | Bootstrap Hamburger | M | 1.5hr | 1hr |
 | Bootstrap navigation  | M | 1.5hr|  1.5hr | 
-| Mobile first/Responsive| H | 3hr | hr|
-| Working with API | M | 0.5hr | hr | 
+| Mobile first/Responsive| H | 3hr | 4hr|
+| Working with API | M | 0.5hr | 0.5hr | 
 | Deploy site | M | 0.5hr | 1hr |
 | Project Previews | H | 3hr | 4hr |
-| Adding Form | M | 1.5hr |  hr |
-| Total | H | 19.5hrs| hrs |
+| Adding Form | M | 1.5hr |  1.5hr |
+| Total | H | 19.5hrs| 22hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
 | Interactive Banner | L | 2.5hr | hr |
-| Make own icon/logo | L | 2hr | hr |
-| Add animations | L | 3hr | hr |
-| Add carousel | M | 2hr | hr |
-| Total | H | 9.5hrs| hrs |
+| Make own icon/logo | L | 2hr | 2hr |
+| Add animations | M | 3hr | 2hr |
+| Add carousel | L | 2hr | hr |
+| Total | H | 9.5hrs| 4hrs |
 
 ## Additional Libraries
  <!-- Use this section to list all supporting libraries and their role in the project.  -->
@@ -134,6 +134,8 @@ function reverse(string) {
 	// here is the code to reverse a string of text
 }
 ``` -->
+
+
 
 ## Issues and Resolutions
  <!-- Use this section to list of all major issues encountered and their resolution. -->
