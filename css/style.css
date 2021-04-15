@@ -73,7 +73,12 @@ a {
 
 .banner {
     color:white;
-    text-shadow: -8px 4px 3px black;
+    /* text-shadow: -8px 4px 3px black; */
+    text-shadow:-1px 1px 0px #000,
+                1px 1px 0px #000,
+                1px -1px 0px #000,
+                -1px -1px 0px #000,
+                -8px 4px 3px black;
     font-weight: 900;
     font-style: italic;
     animation-duration: 2s;
@@ -321,7 +326,12 @@ footer {
     }
 
     .banner {
-        text-shadow: -16px 8px 4px black;
+        /* text-shadow: -16px 8px 4px black; */
+        text-shadow:-2px 2px 0px #000,
+                    2px 2px 0px #000,
+                    2px -2px 0px #000,
+                    -2px -2px 0px #000,
+                    -16px 8px 4px black;
     }
 
     #my-name {
@@ -455,7 +465,12 @@ footer {
     }
 
     .banner {
-        text-shadow: -20px 10px 5px black;
+        /* text-shadow: -20px 10px 5px black; */
+        text-shadow:-2px 2px 0px #000,
+                    2px 2px 0px #000,
+                    2px -2px 0px #000,
+                    -2px -2px 0px #000,
+                    -20px 10px 5px black;
     }
 
     #my-name {
