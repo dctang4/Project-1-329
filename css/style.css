@@ -59,7 +59,7 @@ a {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: #444957;
+    /* background-color: #444957; */
     background-image: url("https://res.cloudinary.com/dvxvez8mj/image/upload/v1618456640/background_chmhga.jpg");
     background-position: center;
     opacity: 0.8;
@@ -68,7 +68,7 @@ a {
 
 .banner {
     color:white;
-    text-shadow: -15px 5px 5px black;
+    text-shadow: -8px 4px 3px black;
     font-weight: 900;
     font-style: italic;
     animation-duration: 2s;
@@ -315,6 +315,10 @@ footer {
         background-size: 1024px;
     }
 
+    .banner {
+        text-shadow: -16px 8px 4px black;
+    }
+
     #my-name {
         font-size: 5em;
     }
@@ -445,13 +449,16 @@ footer {
         background-size: 1900px;
     }
 
+    .banner {
+        text-shadow: -20px 10px 5px black;
+    }
+
     #my-name {
         font-size: 7em;
     }
 
     #my-title {
         font-size: 4em;
-
     }
 
     /* ------------------- about ------------------- */
