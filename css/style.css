@@ -64,6 +64,11 @@ a {
     background-position: center;
     opacity: 0.8;
     background-size: 768px;
+    transition: all 2s;
+}
+
+#banner:hover {
+    opacity: 1;
 }
 
 .banner {
