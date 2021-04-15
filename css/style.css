@@ -59,8 +59,7 @@ a {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    /* background-color: #444957; */
-    background-image: url("https://res.cloudinary.com/dvxvez8mj/image/upload/v1618430797/background-dragon_itutzd.jpg");
+    background-color: #444957;
     background-position: center;
     background-size: 690px;
 }
