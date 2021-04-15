@@ -2,8 +2,7 @@
 /* ------------------- Mobile ------------------- */
 /* ---------------------------------------------- */
 * {
-    box-sizing: border-box !important;
-    /* border: 1px solid black; */
+    /* box-sizing: border-box !important; */
     font-family: Raleway;
 }
 
@@ -11,13 +10,15 @@ html {
     scroll-behavior: smooth;
 }
 
-.title,
+h2,
 #skill-section,
 #about-text,
 #project-cards,
-form{
+form,
+#my-email{ 
     padding: 10px;
-    margin: 10px;
+    margin-bottom: 10px;
+    color: white;
 }
 
 /* ------------------- Header - navbar ------------------- */
@@ -28,9 +29,6 @@ nav.navbar {
 }
 
 #logo {
-    /* font-weight: 900;
-    font-style: italic;
-    color: dimgray; */
     height: 50px;
     align-self: center;
     margin: 0;
@@ -89,7 +87,7 @@ a {
     text-align: center;
     font-weight: 900;
     font-size: 2.2em;
-    margin: 0;
+    margin: auto;
 }
 
 .title:hover {
@@ -102,10 +100,6 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
-}
-
-#about-title {
-    color: white;
 }
 
 #about .grid {
@@ -140,16 +134,15 @@ a {
     width: 100%;
     top: 0;
     left: 0;
-    color: white;
     font-weight: 800;
     opacity: 0;
     transition: all 1s;
-    transform: translate(0, 145px);
+    transform: translate(0, 130px);
 }
 
 #pic:hover h2 {
     opacity: 0.6;
-    transform: translate(0, 0px)
+    transform: translate(0, -10px)
 }
 
 #skill-section {
@@ -179,7 +172,6 @@ a {
 /* ------------------- Main - Projects ------------------- */
 #projects {
     background-color: #444957;
-    color: white;
 }
 
 #project-cards {
@@ -195,15 +187,17 @@ a {
     width: 300px;
     color:  black;
     text-align: center;
-    margin: 20px 10px;
+    margin: 30px 15px;
     border-radius: 10px;
     background-color: #D3D3D3;
     border: 1px solid white;
+    opacity: 0.75;
     transition: all 0.5s;
 }
 
 .card:hover {
     transform: scale(1.08);
+    opacity: 1;
 }
 
 .card:hover .image {
@@ -242,7 +236,7 @@ a {
     background-color: slategrey;
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
 }
 
 #my-email {
@@ -253,25 +247,18 @@ a {
 
 input, textarea {
     margin : 5px 0;
-}
-
-.name, .email {
+    border: 3px solid #444957;
+    border-radius: 7px;
     width: 300px;
     padding: 5px;
-    border: 3px solid #444957;
+    background-color: #f8f8f8;    
 }
 
 .message {
-    width: 300px;
     height: 150px;
-    padding: 5px;
-    border: 3px solid #444957;
-    border-radius: 4px;
-    background-color: #f8f8f8;
 }
 
 .submit {
-    border: 3px solid #444957;
     width: 80px;
     padding: 2px;
 }
@@ -298,6 +285,7 @@ footer {
 .icon {
     color:white
 }
+
 .icon:hover {
     color: #DBDBDB;
 }
@@ -369,7 +357,7 @@ footer {
 
     #pic h2 {
         font-size: 2.5em;
-        transform: translate(0, 170px);
+        transform: translate(0, 155px);
     }
 
     #skill-section {
@@ -451,9 +439,7 @@ footer {
         font-size: 2.0em;
     }
 
-    /* :active - when when you click the the tag element something
-    happens as you specify (only fo a brief moment)*/
-    a.nav-element:active {
+    a.nav-element:hover {
         color: black
     }
 
@@ -502,7 +488,7 @@ footer {
 
     #pic h2 {
         font-size: 3.5em;
-        transform: translate(0, 225px);
+        transform: translate(0, 200px);
     }
 
     #skills {
