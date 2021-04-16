@@ -65,7 +65,6 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1gG9ADNvPO4dN1fL4r-pTxV-QYtfJ
     console.error(error)
 })
 
-
 // Quick way to add animate__animated class to all the titles
 $(".title").addClass("animate__animated")
 
