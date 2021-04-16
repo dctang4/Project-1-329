@@ -16,7 +16,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |Day 1| Wireframes / Priority Matrix / Timeline | Complete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Complete
 |Day 4| MVP & Bug Fixes | Complete
-|Day 5| Final Touches | Incomplete
+|Day 5| Final Touches | Complete
 |Day 6| Present | Incomplete
 
 
@@ -112,9 +112,9 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | --- | :---: |  :---: | :---: | 
 | Interactive Banner | L | 2.5hr | hr |
 | Make own icon/logo | L | 2hr | 2hr |
-| Add animations | M | 3hr | 2hr |
+| Add animations | M | 3hr | 3hr |
 | Add carousel | L | 2hr | hr |
-| Total | H | 9.5hrs| 4hrs |
+| Total | H | 9.5hrs| 5hrs |
 
 ## Additional Libraries
  <!-- Use this section to list all supporting libraries and their role in the project.  -->
@@ -135,12 +135,15 @@ function reverse(string) {
 }
 ``` -->
 
-        const $image = $(`<a class='img-link' 
-			href=${obj.liveurl} target='_blank' 
-			rel='noopener noreferrer'> 
-			<img src=./pics/${obj.image} class='image' 
-			alt='image of ${obj.project} project'/> 
-			</a>`);
+	// create an image tag of the project nested within 
+	// an a tag that links to the project live url
+
+	const $image = $(`<a class='img-link' 
+		href=${obj.liveurl} target='_blank' 
+		rel='noopener noreferrer'> 
+		<img src=./pics/${obj.image} class='image' 
+		alt='image of ${obj.project} project'/> 
+		</a>`);
 
 ## Issues and Resolutions
  <!-- Use this section to list of all major issues encountered and their resolution. -->
@@ -157,6 +160,6 @@ Missing comma after first object in sources {} object -->
 2. I didn't know how to make it scroll after clicking the nav bar links.
 
 **RESOLUTION**
-1. As one of the first things I was working on, I didn't want to waste too much time on it.  So after struggling for a bit I just decided to do a work around.  I crerated a hidden set of nav links that is only visible in destop mode and the drop down nav links become hidden.
+1. As it was one of the early features I worked on, I didn't want to spend too much time on it, so I created a work around by making another set of links that only show in desktop mode.  But once I had free time at the end, I was able to study how bootstrap expanded the navbar and figure out how to do it myself at the correct media query settings.
 
 2. I google searched and found out that I need href to the id of the location I wanted to scroll to.  Also to prevent the default jump, I needed to add the property scroll-behavior with value smooth to the html.

@@ -10,15 +10,16 @@ html {
     scroll-behavior: smooth;
 }
 
+
 h2,
 #skill-section,
 #about-text,
-#project-cards,
 form,
 #my-email{ 
     padding: 10px;
     margin-bottom: 10px;
     color: white;
+    font-weight: 600;
 }
 
 /* ------------------- Header - navbar ------------------- */
@@ -44,6 +45,7 @@ nav div.navbar {
 
 a {
     font-size: 20px;
+    font-weight: 600;
 }
 
 #header-space {
@@ -81,6 +83,9 @@ a {
     font-weight: 900;
     font-style: italic;
     animation-duration: 2s;
+}
+p.banner {
+    font-size: 22px;
 }
 
 /* ------------------- Main - About ------------------- */
@@ -157,6 +162,7 @@ a {
 
 #skills {
     text-align: center;
+    font-weight: 700;
 }
 
 #skills-list {
@@ -340,7 +346,7 @@ footer {
     }
 
     #my-title {
-        font-size: 3em;
+        font-size: 2.8em;
     }
 
     /* ------------------- about ------------------- */
@@ -430,6 +436,7 @@ footer {
 
     nav.navbar {
         padding: 0 10px;
+        flex-flow: row nowrap;
     }
 
     button {
@@ -437,16 +444,18 @@ footer {
     }
 
     div.collapse {
-        display:none;
+        display: flex !important;
+        justify-content: flex-end;
     }
 
-    nav div.navbar {
-        display: flex
+    div.navbar-nav {
+        flex-direction: row;
     }
 
-    a.nav-element {
+    a.nav-link{
         color: rgb(120, 120, 120);
-        font-size: 2.0em;
+        font-size: 2.0em !important;
+        margin: 0 15px;
     }
 
     a.nav-element:hover {
@@ -477,7 +486,7 @@ footer {
     }
 
     #my-title {
-        font-size: 4em;
+        font-size: 3.9em;
     }
 
     /* ------------------- about ------------------- */
