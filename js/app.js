@@ -71,7 +71,7 @@ $(".title").addClass("animate__animated")
 
 
 ////////////////////////////////////////////
-// Click body to make drop down menu co
+// Click main to collapse drop down menu
 ////////////////////////////////////////////
 
 const $button = $("button.navbar-toggler");
@@ -84,6 +84,39 @@ $("main").on("click", (event) => {
         $button.addClass("collapsed")
         $button.removeAttr("aria-expanded")
         $button.attr("aria-expanded", "false")
+    }
+})
+
+
+////////////////////////////////////////////
+// Hide sections until nav link is clicked
+////////////////////////////////////////////
+const sections = ["about", "projects", "contact"];
+const displayArray = ["grid", "block", "grid"];
+
+const sectionRemove = (sectKeep) => {
+    for (sect of sections) {
+        if (sect !== sectKeep) {
+            $(`#${sect}`).css("display", "none")
+        }
+    }
+}
+
+const sectionDisplay = (section, display, afunction) => {
+    $(`a.${section}`).on("click", (event) => {
+        $(`#${section}`).css("display", display)
+        afunction(section)
+    })
+}
+
+sectionDisplay("home", "flex", sectionRemove);
+sectionDisplay("about", "grid", sectionRemove);
+sectionDisplay("projects", "block", sectionRemove);
+sectionDisplay("contact", "grid", sectionRemove);
+
+$("img#logo").on("click", (event) => {
+    for (let i = 0; i < sections.length; i++) {
+        $(`#${sections[i]}`).css("display", displayArray[i])
     }
 })
 

@@ -99,7 +99,8 @@ p.banner {
 /* ------------------- Main - About ------------------- */
 #about {
     background-color: rgb(58, 66, 100);
-    display: grid;
+    /* display: grid; */
+    display: none;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
 }
@@ -177,6 +178,7 @@ p.banner {
 #projects {
     background-color: #444957;
     margin-bottom: 10px;
+    display: none;
 }
 
 #project-cards {
@@ -238,9 +240,16 @@ p.banner {
 /* ------------------- Main - Contact ------------------- */
 #contact, form{
     background-color: slategrey;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;    
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#contact {
+    display: none;
+
 }
 
 #my-email {
@@ -250,7 +259,7 @@ p.banner {
 }
 
 input, textarea {
-    margin : 5px 0;
+    margin : 5px auto;
     border: 3px solid #444957;
     border-radius: 7px;
     width: 300px;
@@ -379,6 +388,10 @@ footer {
         display: grid;
         grid-template-columns: 3fr .3fr 3fr;
         grid-template-rows: repeat(3, auto);
+    }
+
+    input {
+        margin: 5px 0;
     }
 
     .name {
@@ -517,7 +530,6 @@ footer {
 
     /* ------------------- contact ------------------- */
     #contact {
-        display: grid;
         grid-template-columns: 3fr .3fr 3fr;
         grid-template-rows: repeat(6, auto);
     }
