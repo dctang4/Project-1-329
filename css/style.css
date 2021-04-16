@@ -63,15 +63,16 @@ a.nav-link {
 
 /* ------------------- Main - Banner ------------------- */
 #banner {
-    height: 323px;
+    height: 431px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
     background-image: url("https://res.cloudinary.com/dvxvez8mj/image/upload/c_scale,q_100,w_1900/v1618456640/background_chmhga.jpg");
     background-position: center;
     opacity: 0.75;
-    background-size: 768px;
+    background-size: 1024px;
     transition: all 2s;
 }
 
