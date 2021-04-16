@@ -145,3 +145,9 @@ function reverse(string) {
 app.js:34 Uncaught SyntaxError: Unexpected identifier                                
 **RESOLUTION**: 
 Missing comma after first object in sources {} object -->
+
+**ERROR**
+1. I didn't know how to make it scroll after clicking the nav bar links.
+
+**RESOLUTION**
+1. I google searched and found out that I need href to the id of the location I wanted to scroll to.  Also to prevent the default jump, I needed to add the property scroll-behavior with value smooth to the html.
