@@ -40,8 +40,8 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1gG9ADNvPO4dN1fL4r-pTxV-QYtfJ
         // create a tag that links to the github project repository
         const $giturl = $(`<a href=${obj.giturl} class='btn btn-secondary giturl' target='_blank' rel='noopener noreferrer'>`).text("Github");
 
-        // create a tag with an image of the project
-        const $image = $(`<img src=./pics/${obj.image} class='image' alt='image of ${obj.project} project'>`);
+        // create an image tag of the project nested within an a tag that links to the project live url
+        const $image = $(`<a class='img-link' href=${obj.liveurl} target='_blank' rel='noopener noreferrer'> <img src=${obj.image} class='image' alt='image of ${obj.project} project'/> </a>`);
 
         // create a tage with the description of the project
         const $description = $("<p class='description'>").text(obj.description)

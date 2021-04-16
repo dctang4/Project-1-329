@@ -135,7 +135,12 @@ function reverse(string) {
 }
 ``` -->
 
-
+        const $image = $(`<a class='img-link' 
+			href=${obj.liveurl} target='_blank' 
+			rel='noopener noreferrer'> 
+			<img src=./pics/${obj.image} class='image' 
+			alt='image of ${obj.project} project'/> 
+			</a>`);
 
 ## Issues and Resolutions
  <!-- Use this section to list of all major issues encountered and their resolution. -->
@@ -146,8 +151,12 @@ app.js:34 Uncaught SyntaxError: Unexpected identifier
 **RESOLUTION**: 
 Missing comma after first object in sources {} object -->
 
-**ERROR**
-1. I didn't know how to make it scroll after clicking the nav bar links.
+**ISSUE**
+1. I couldn't move the nav links from the drop down menu back up to the nav bar in destop mode.
+
+2. I didn't know how to make it scroll after clicking the nav bar links.
 
 **RESOLUTION**
-1. I google searched and found out that I need href to the id of the location I wanted to scroll to.  Also to prevent the default jump, I needed to add the property scroll-behavior with value smooth to the html.
+1. As one of the first things I was working on, I didn't want to waste too much time on it.  So after struggling for a bit I just decided to do a work around.  I crerated a hidden set of nav links that is only visible in destop mode and the drop down nav links become hidden.
+
+2. I google searched and found out that I need href to the id of the location I wanted to scroll to.  Also to prevent the default jump, I needed to add the property scroll-behavior with value smooth to the html.
