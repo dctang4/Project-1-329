@@ -2,7 +2,6 @@
 /* ------------------- Mobile ------------------- */
 /* ---------------------------------------------- */
 * {
-    box-sizing: border-box;
     font-family: Raleway;
 }
 
@@ -10,6 +9,17 @@ html {
     scroll-behavior: smooth;
 }
 
+.title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.2em;
+    margin: auto;
+}
+
+.title:hover {
+    animation: heartBeat;
+    animation-duration: 1s;
+}
 
 h2,
 #skill-section,
@@ -32,19 +42,12 @@ nav.navbar {
 #logo {
     height: 50px;
     width: 39px;
-    align-self: center;
     margin: 0;
     opacity: .4;
 }
 
-nav div.navbar {
-    display: none;
-    margin: 0;
-    padding-right: 0;
-}
-
-a {
-    font-size: 20px;
+a.nav-link {
+    font-size: 1.25em;
     font-weight: 600;
 }
 
@@ -89,18 +92,6 @@ p.banner {
 }
 
 /* ------------------- Main - About ------------------- */
-.title {
-    text-align: center;
-    font-weight: 900;
-    font-size: 2.2em;
-    margin: auto;
-}
-
-.title:hover {
-    animation: pulse;
-    animation-duration: 0.5s;
-}
-
 #about {
     background-color: rgb(58, 66, 100);
     display: grid;
@@ -123,8 +114,6 @@ p.banner {
 #my-pic {
     height: 300px;
     width: 250px;
-    margin-left: auto;
-    margin-right: auto;
     opacity: 0.75;
     transition: all 1s;
 }
@@ -182,6 +171,7 @@ p.banner {
 /* ------------------- Main - Projects ------------------- */
 #projects {
     background-color: #444957;
+    margin-bottom: 10px;
 }
 
 #project-cards {
@@ -189,7 +179,6 @@ p.banner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 0;
 }
 
 .card {
@@ -217,14 +206,12 @@ p.banner {
 
 .project {
     font-weight: 800;
-    margin: 15px auto;
+    margin: 15px 0;
 }
 
 .image {
     height: 190px;
     width: 95%;
-    margin: 0 2.5%;
-    text-align: center;
     transition: all 0.5s;
 }
 
@@ -318,7 +305,6 @@ footer {
     }
 
     div.navbar-nav a.nav-link {
-        color: black;
         font-size: 1.5em;
     }
 
@@ -453,13 +439,8 @@ footer {
     }
 
     a.nav-link{
-        color: rgb(120, 120, 120);
         font-size: 2.0em !important;
         margin: 0 15px;
-    }
-
-    a.nav-element:hover {
-        color: #444957
     }
 
     #header-space {

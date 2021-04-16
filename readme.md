@@ -138,9 +138,7 @@ function reverse(string) {
 	// create an image tag of the project nested within 
 	// an a tag that links to the project live url
 
-	const $image = $(`<a class='img-link' 
-		href=${obj.liveurl} target='_blank' 
-		rel='noopener noreferrer'> 
+	const $image = $(`<a class='img-link' href=${obj.liveurl} 			target='_blank' rel='noopener noreferrer'> 
 		<img src=./pics/${obj.image} class='image' 
 		alt='image of ${obj.project} project'/> 
 		</a>`);
