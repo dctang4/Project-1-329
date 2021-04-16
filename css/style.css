@@ -9,6 +9,11 @@ html {
     scroll-behavior: smooth;
 }
 
+body, nav.navbar{
+    max-width: 1900px;
+    margin: auto;
+}
+
 .title {
     text-align: center;
     font-weight: 900;

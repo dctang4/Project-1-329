@@ -69,6 +69,25 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1gG9ADNvPO4dN1fL4r-pTxV-QYtfJ
 // Quick way to add animate__animated class to all the titles
 $(".title").addClass("animate__animated")
 
+
+////////////////////////////////////////////
+// Click body to make drop down menu co
+////////////////////////////////////////////
+
+const $button = $("button.navbar-toggler");
+const $divNavCollapse = $("div.collapse");
+console.log($divNavCollapse.hasClass("show"))
+
+$("main").on("click", (event) => {
+    if ($divNavCollapse.hasClass("show")) {
+        $divNavCollapse.removeClass("show")
+        $button.addClass("collapsed")
+        $button.removeAttr("aria-expanded")
+        $button.attr("aria-expanded", "false")
+    }
+})
+
+
 ////////////////////////////////////////////
 // Contact submit - Eventlistener
 ////////////////////////////////////////////
