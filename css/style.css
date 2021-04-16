@@ -63,7 +63,7 @@ a.nav-link {
 
 /* ------------------- Main - Banner ------------------- */
 #banner {
-    height: 15em;
+    height: 323px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -328,7 +328,7 @@ footer {
 
     /* ------------------- banner ------------------- */
     #banner {
-        height: 25em;
+        height: 431px;
         background-size: 1024px;
     }
 
@@ -467,7 +467,7 @@ footer {
 
     /* ------------------- banner ------------------- */
     #banner {
-        height: 35em;
+        height: 800px;
         background-size: 1900px;
     }
 
