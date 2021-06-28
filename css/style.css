@@ -173,6 +173,12 @@ p.banner {
     display: none;
 }
 
+#resume-link {
+    color: whitesmoke;
+    font-size: 18px;
+    font-style: italic;
+}
+
 /* ------------------- Main - Projects ------------------- */
 #projects {
     background-color: #444957;
@@ -347,7 +353,7 @@ footer {
 
     .grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1.5fr;
         grid-template-rows: auto auto;
     }
 
@@ -369,6 +375,10 @@ footer {
 
     #skill-section {
         margin-bottom: 10px;
+    }
+
+    #skills-list {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     /* ------------------- projects ------------------- */
@@ -482,7 +492,7 @@ footer {
 
     .grid {
         display: grid;
-        grid-template-columns: 2fr 3fr;
+        grid-template-columns: 2fr 3.1fr;
         grid-template-rows: auto auto;
     }
 
@@ -504,12 +514,20 @@ footer {
         font-size: 20px;
     }
 
+    #skills-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
     p {
         font-size: 18px;
     }
 
     #extra {
         display: flex;
+    }
+
+    #resume-link {
+        font-size: 21px;
     }
 
     /* ------------------- projects ------------------- */
