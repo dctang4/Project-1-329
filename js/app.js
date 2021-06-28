@@ -92,9 +92,23 @@ $("main").on("click", (event) => {
 // Contact submit - Eventlistener
 ////////////////////////////////////////////
 
+const url = "https://2ik6a1yzjl.execute-api.us-east-2.amazonaws.com/dev/messages"
+
+const handleSubmit = (newMessaage) => {
+    fetch(url, {
+        method: 'post',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+            body: JSON.stringify(newMessaage)
+    })
+    .then(() => getSongs())
+}
+
 const $form = $("form");
 const $name = $("input[name='name']");
 const $email = $("input[name='email']");
+const $message = $("textarea.message");
 const $thanks = $("<div id='thanks'>").css({
     "text-align": "center",
     "font-weight": "bold",
@@ -106,14 +120,22 @@ $form.on("submit", (event) => {
     event.preventDefault();  // prevent default refresh
     $thanks.empty();  // empty the tag of previous contact info
 
+    const message = {
+        "name": $name.val(),
+        "email": $email.val(),
+        "message": $message.val()
+    }
+
     // only print text on the page when there is both a name and email input.
-    if ($name.val() !==  "" && $email.val() !== "") {
+    if ($name.val() !==  "" && $email.val() !== "" && $message.val() !== "") {
         $thanks.text(`Thanks ${$name.val()} for reaching out.  
         I'll email you back at ${$email.val()} as soon as possible!`);
         $("#contact").append($thanks);
-        $thanks
+        handleSubmit(message)
+        // $thanks
     }
     // reset the input value
     $name.val("");
     $email.val("");
+    $message.val("");
 })
