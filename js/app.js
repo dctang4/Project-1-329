@@ -1,5 +1,3 @@
-import projects from "../projectData.json"
-
 ///////////////////////////////////////////////////
 // Get data from Google Sheets
 ///////////////////////////////////////////////////
@@ -24,8 +22,26 @@ import projects from "../projectData.json"
 //     console.log(projects)
 
 ///////////////////////////////////////////////////
-// Get data from Google Sheets
+// Get data from DB
 ///////////////////////////////////////////////////
+
+$.ajax("https://chun-hin-projects-db.herokuapp.com/projects/")
+
+.then((data) => {
+    console.log(data)
+
+    // Map over the data to generate a simplier data
+    const projects = data.map((item) => {
+        return {
+            project: item.fields.project,
+            liveurl: item.fields.liveurl,
+            giturl: item.fields.giturl,
+            image: item.fields.image,
+            description: item.fields.description,
+        }
+    })
+
+    console.log(projects)
 
     /////////////////////////////////////////////////
     // jquery to render your project
